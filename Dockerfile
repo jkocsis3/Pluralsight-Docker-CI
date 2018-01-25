@@ -17,6 +17,3 @@ RUN cd /src; npm install
 EXPOSE 8080
 
 CMD cd /src && node ./app.js
-
-# SAdds junit style xml results.  doesnt appear to run in the container...
-# RUN npm install mocha-junit-reporter --save-dev
