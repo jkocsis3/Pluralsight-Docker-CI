@@ -11,7 +11,7 @@ version: 2
 jobs:
   build:
     docker:
-      # - image: circleci/python:3.6.2-stretch-browsers
+      - image: centos6
 
 test:
   override:    
