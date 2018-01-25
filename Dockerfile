@@ -14,6 +14,8 @@ COPY . /src
 # Install app and dependencies into /src
 RUN cd /src; npm install
 
+RUN cd /src; npm install mocha-junit-reporter --save-dev
+
 EXPOSE 8080
 
 CMD cd /src && node ./app.js
