@@ -18,5 +18,5 @@ EXPOSE 8080
 
 CMD cd /src && node ./app.js
 
-#Adds junit style xml results.  doesnt appear to run in the container...
-RUN npm install mocha-junit-reporter --save-dev
+# SAdds junit style xml results.  doesnt appear to run in the container...
+# RUN npm install mocha-junit-reporter --save-dev
