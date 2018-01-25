@@ -4,8 +4,8 @@
 
 var express = require('express'),
     app = express();
-
-app.set('views', 'views');
+// added a '/' before views to break it
+app.set('views', '/views');
 app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
