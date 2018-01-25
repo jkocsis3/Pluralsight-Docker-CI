@@ -11,10 +11,12 @@ RUN yum install -y npm
 # Copy app to /src
 COPY . /src
 
+RUN npm install mocha-junit-reporter --save-dev
+
 # Install app and dependencies into /src
 RUN cd /src; npm install
 
-RUN cd /src; npm install mocha-junit-reporter --save-dev
+
 
 EXPOSE 8080
 
